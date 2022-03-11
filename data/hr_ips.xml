@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>						
 <odoo>						
-    <data>						
+    <data>		
+        <!--IPS-->				
         <record id="hr_ips_0" model="hr.tabla_lre">
             <field name="tipo_tabla">ips</field>
             <field name="codigo">0</field>
@@ -21,6 +22,223 @@
             <field name="codigo">3</field>
             <field name="name">Régimen 3</field>
         </record>
+
+        <!--Causales de Término de Contrato (cód 1104) -->
+        <record id="hr_termino_contrato_3" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">3</field>
+            <field name="name">Art. 159 N°1: Mutuo acuerdo de las partes</field>
+        </record>
+        <record id="hr_termino_contrato_4" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">4</field>
+            <field name="name">Art. 159 N°2: Renuncia Del Trabajador</field>
+        </record>
+        <record id="hr_termino_contrato_5" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">5</field>
+            <field name="name">Art. 159 N°3: Muerte del trabajador</field>
+        </record>
+        <record id="hr_termino_contrato_6" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">6</field>
+            <field name="name">Art. 159 N°4: Vencimiento del plazo convenido</field>
+        </record>
+        <record id="hr_termino_contrato_7" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">7</field>
+            <field name="name">Art. 159 N°5: Conclusión del trabajo o servicio</field>
+        </record>
+        <record id="hr_termino_contrato_8" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">8</field>
+            <field name="name">Art. 159 N°6: Caso fortuito o fuerza mayor</field>
+        </record>
+        <record id="hr_termino_contrato_24" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">24</field>
+            <field name="name">Art. 160 N°1 Letra A): Falta de probidad</field>
+        </record>
+        <record id="hr_termino_contrato_25" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">25</field>
+            <field name="name">Art. 160 N°1 Letra B): Conductas de acoso sexual</field>
+        </record>
+        <record id="hr_termino_contrato_26" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">26</field>
+            <field name="name">Art. 160 N°1 Letra C): Vías de hecho</field>
+        </record>
+        <record id="hr_termino_contrato_27" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">27</field>
+            <field name="name">Art. 160 N°1 Letra D): Injurias</field>
+        </record>
+        <record id="hr_termino_contrato_28" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">28</field>
+            <field name="name">Art. 160 N°1 Letra E): Conducta inmoral</field>
+        </record>
+        <record id="hr_termino_contrato_29" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">29</field>
+            <field name="name">Art. 160 N°1 Letra F): Conductas de acoso laboral</field>
+        </record>
+        <record id="hr_termino_contrato_11" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">11</field>
+            <field name="name">Art. 160 N° 2: Negociaciones prohibidas por escrito</field>
+        </record>
+        <record id="hr_termino_contrato_12" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">12</field>
+            <field name="name">Art. 160 N° 3: No concurrencia a las labores</field>
+        </record>
+        <record id="hr_termino_contrato_13" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">13</field>
+            <field name="name">Art. 160 N° 4: Abandono del trabajo</field>
+        </record>
+        <record id="hr_termino_contrato_14" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">14</field>
+            <field name="name">Art.160 N°5:Actos, omisiones o imprudencias temerarias</field>
+        </record>        
+        <record id="hr_termino_contrato_15" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">15</field>
+            <field name="name">Art. 160 N°6: Perjuicio material causado intencionalmente</field>
+        </record>                
+        <record id="hr_termino_contrato_16" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">16</field>
+            <field name="name">Art. 160 N° 7: Incumplimiento grave de las obligaciones</field>
+        </record>                
+        <record id="hr_termino_contrato_18" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">18</field>
+            <field name="name">Art. 161 Inciso 1°: Necesidades de la empresa</field>
+        </record>                
+        <record id="hr_termino_contrato_19" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">19</field>
+            <field name="name">Art. 161 Inciso 2°: desahucio escrito del empleador</field>
+        </record>                
+        <record id="hr_termino_contrato_20" model="hr.tabla_lre">
+            <field name="tipo_tabla">causal_despido</field>
+            <field name="codigo">20</field>
+            <field name="name">Art. 163 Bis: Procedimiento concursal de liquidación</field>
+        </record>                
+        <!--Tipo de impuesto a la renta (cód 1170) -->
+        <record id="hr_tipo_impuesto_1" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_impuesto</field>
+            <field name="codigo">1</field>
+            <field name="name">Impuesto de Segunda Categoría</field>
+        </record>                
+        <record id="hr_tipo_impuesto_2" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_impuesto</field>
+            <field name="codigo">2</field>
+            <field name="name">Impuesto Único Obrero Agrícola</field>
+        </record>                
+        <record id="hr_tipo_impuesto_3" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_impuesto</field>
+            <field name="codigo">3</field>
+            <field name="name">Impuesto Adicional</field>
+        </record>                
+
+        <!--Código de Tipo de Jornada (cód 1107)-->
+
+        <record id="hr_tipo_jornada_101" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">101</field>
+            <field name="name">Ordinaria-Art. 22</field>
+        </record>                
+        <record id="hr_tipo_jornada_202" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">202</field>
+            <field name="name">Parcial-Art. 40 Bis</field>
+        </record>                
+        <record id="hr_tipo_jornada_301" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">301</field>
+            <field name="name">Extraordinaria-Art. 30</field>
+        </record>                
+        <record id="hr_tipo_jornada_401" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">401</field>
+            <field name="name">Especial-Art 38 Inciso 5</field>
+        </record>                
+        <record id="hr_tipo_jornada_402" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">402</field>
+            <field name="name">Especial-Art. 23</field>
+        </record>                
+        <record id="hr_tipo_jornada_403" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">403</field>
+            <field name="name">Especial-Art. 106</field>
+        </record>                
+        <record id="hr_tipo_jornada_404" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">404</field>
+            <field name="name">Especial-Art. 152 Ter D</field>
+        </record>                
+        <record id="hr_tipo_jornada_405" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">405</field>
+            <field name="name">Especial-Art. 152 Ter F</field>
+        </record>                
+        <record id="hr_tipo_jornada_406" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">406</field>
+            <field name="name">Especial-Art. 25</field>
+        </record>                
+        <record id="hr_tipo_jornada_407" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">407</field>
+            <field name="name">Especial-Art. 25 Bis</field>
+        </record>                
+        <record id="hr_tipo_jornada_408" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">408</field>
+            <field name="name">Especial-Art. 149</field>
+        </record>                
+        <record id="hr_tipo_jornada_409" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">409</field>
+            <field name="name">Especial-Art. 149 Inciso 2</field>
+        </record>                
+        <record id="hr_tipo_jornada_410" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">410</field>
+            <field name="name">Especial-Art. 152 Bis</field>
+        </record>                
+        <record id="hr_tipo_jornada_411" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">411</field>
+            <field name="name">Especial-Art. 36 145-D</field>
+        </record>                
+        <record id="hr_tipo_jornada_412" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">412</field>
+            <field name="name">Especial-Art. 22 Inciso Final</field>
+        </record>                
+        <record id="hr_tipo_jornada_501" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">501</field>
+            <field name="name">Bisemanal-Art. 39</field>
+        </record>                
+        <record id="hr_tipo_jornada_601" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">601</field>
+            <field name="name">Jornada Excepcional-Art. 38 Inciso Final</field>
+        </record>                
+
+        <record id="hr_tipo_jornada_701" model="hr.tabla_lre">
+            <field name="tipo_tabla">tipo_jornada</field>
+            <field name="codigo">701</field>
+            <field name="name">Exenta-Art. 22 </field>
+        </record>                
 
 
     </data>
