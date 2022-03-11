@@ -709,7 +709,7 @@ class WizardExportCsvLre(models.TransientModel):
                              ]
             writer.writerow([str(l) for l in line_employee])
         self.write({'file_data': base64.encodebytes(output.getvalue().encode()),
-                    'file_name': "Lre_%s.txt" % (self.date_to),
+                    'file_name': "Lre_%s.csv" % (self.date_to),
                     })
         self.clear_caches()
         return self.show_view(u'LRE Generado')
