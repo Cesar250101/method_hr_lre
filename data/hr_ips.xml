@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>						
+<odoo>						
+    <data>						
+        <record id="hr_ips_0" model="hr.tabla_lre">
+            <field name="tipo_tabla">ips</field>
+            <field name="codigo">0</field>
+            <field name="name">No pertenece al IPS</field>
+        </record>
+        <record id="hr_ips_1" model="hr.tabla_lre">
+            <field name="tipo_tabla">ips</field>
+            <field name="codigo">1</field>
+            <field name="name">Bancaria - Régimen 1</field>
+        </record>
+        <record id="hr_ips_2" model="hr.tabla_lre">
+            <field name="tipo_tabla">ips</field>
+            <field name="codigo">2</field>
+            <field name="name">Bancaria - Régimen 2 </field>
+        </record>
+        <record id="hr_ips_3" model="hr.tabla_lre">
+            <field name="tipo_tabla">ips</field>
+            <field name="codigo">3</field>
+            <field name="name">Régimen 3</field>
+        </record>
+
+
+    </data>
+</odoo>                     

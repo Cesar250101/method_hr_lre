@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+		<!-- model.name inherit form view -->
+		<record id="method_hr_lre.hr_contract_view_form" model="ir.ui.view">
+			<field name="name">method.hr.lre.hr.contract.view.form</field>
+			<field name="model">hr.contract</field>
+			<field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//page[@name='information']" position="after">
+					<page name="lre" string="Libro Electónico">
+						<group>
+							<group>
+								<field name="region_id"/>
+								<field name="comuna_id"/>
+								<field name="jornada_id"/>
+								<field name="impuesto_id"/>
+								<field name="tecnico_extranjero"/>
+								<field name="persona_discapacidad"/>
+								<field name="pensionado_vejez"/>
+							</group>
+							<group>
+								<field name="ips_id"/>
+								<field name="afc"/>
+								<field name="tramo_asig_fam"/>
+								
+							</group>
+						</group>
+					</page>
+				</xpath>
+				<xpath expr="//field[@name='trial_date_end']" position="before">
+					<field name="causal_despido_id" attrs="{'invisible': [('date_end', '=', False)]}"/>
+				</xpath>
+			</field>
+		</record>
+
+		<!-- model.name inherit form view -->
+		<record id="l10n_cl_hr.view_country_state_form" model="ir.ui.view">
+			<field name="name">l10n.cl.hr.view.country.state.form</field>
+			<field name="model">res.country.state</field>
+			<field name="inherit_id" ref="base.view_country_state_form"/>
+			<field name="arch" type="xml">
+				<field name="country_id" position="after">
+                	<field name="lre_codigo"/>
+            	</field>			
+			</field>
+		</record>
+
+		<record id="hr_tabla_lre_form" model="ir.ui.view">
+			<field name="name">hr.tabla.lre</field>
+			<field name="model">hr.tabla_lre</field>
+			<field name="arch" type="xml">
+				<form string="Tablas LRE">
+					<sheet>
+						<div class="oe_title">
+							<label for="tipo_tabla" string="TIPO TABLA" />
+							<h1>
+								<field name="tipo_tabla" />
+							</h1>
+						</div>
+						<group>
+							<group>
+								<field name="codigo" string="Codigo" />
+								<field name="name" string="Nombre" />
+							</group>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+<!-- model.name tree view -->
+<record id="hr_tabla_lre_view_tree" model="ir.ui.view">
+	<field name="name">hr.tabla.lre.view.tree</field>
+	<field name="model">hr.tabla_lre</field>
+	<field name="arch" type="xml">
+		<tree>
+			<field name="tipo_tabla"/>
+			<field name="codigo"/>
+			<field name="name"/>
+		</tree>
+	</field>
+</record>		
+
+
+
+
+		<act_window id="hr_tablas_lre_action" name="Tablas LRE"
+			res_model="hr.tabla_lre" view_type="form" view_mode="tree,form"/>
+
+		<menuitem id="hr_tablas_lre_menu_act" name="Tablas LRE" parent="hr_tablas_lre_menu" action="hr_tablas_lre_action" sequence="1"/>
+
+		<menuitem id="hr_tablas_lre_menu" parent="hr_payroll.menu_hr_payroll_root"
+			action="hr_tablas_lre_action" sequence="14" />
+	</data>
+</odoo>
