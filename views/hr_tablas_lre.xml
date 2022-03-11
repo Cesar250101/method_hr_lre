@@ -89,9 +89,9 @@
 		<act_window id="hr_tablas_lre_action" name="Tablas LRE"
 			res_model="hr.tabla_lre" view_type="form" view_mode="tree,form"/>
 
-		<menuitem id="hr_tablas_lre_menu_act" name="Tablas LRE" parent="hr_tablas_lre_menu" action="hr_tablas_lre_action" sequence="1"/>
-
 		<menuitem id="hr_tablas_lre_menu" parent="hr_payroll.menu_hr_payroll_root"
 			action="hr_tablas_lre_action" sequence="14" />
+			
+		<menuitem id="hr_tablas_lre_menu_act" name="Tablas LRE" parent="hr_tablas_lre_menu" action="hr_tablas_lre_action" sequence="1"/>			
 	</data>
 </odoo>
